@@ -145,9 +145,7 @@ h3,
   background-color: var(--pokedex-red);
   padding: 30px;
   border-bottom: 15px solid var(--pokedex-black);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: static;
   display: flex;
   align-items: center;
   gap: 30px;
