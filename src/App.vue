@@ -1,22 +1,10 @@
 <script setup>
-import { ref } from 'vue';
 import PokemonListView from './views/PokemonListView.vue';
-import LandingPage from './components/LandingPage.vue';
 import './assets/styles/pokedex.css';
-
-const showPokedex = ref(false);
-
-const startApp = () => {
-  showPokedex.value = true;
-};
 </script>
 
 <template>
-  <Transition name="fade-scale">
-    <LandingPage v-if="!showPokedex" @start="startApp" />
-  </Transition>
-
-  <div v-if="showPokedex" id="app" class="app-transition">
+  <div id="app" class="app-transition">
     <!-- Pokedex Header Hook -->
     <header class="pokedex-header">
       <div class="main-led"></div>
